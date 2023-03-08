@@ -4,7 +4,7 @@ import numpy as np
 import chardet
 import os
 
-root = "address"
+root = "your address"
 list = os.listdir(root)
 dataset_train = []
 dataset_test = []
@@ -38,7 +38,7 @@ for cat in list:
             file.close()
 
 
-with open("address"+".txt",'w',encoding='utf-8') as file:
+with open("your address"+".txt",'w',encoding='utf-8') as file:
     for i in range(len(dataset_train)):
         file.write(dataset_train[i][0]+"\t"+dataset_train[i][1]+"\n")
 
